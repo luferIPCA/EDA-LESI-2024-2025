@@ -1,0 +1,7 @@
+
+Carregar material do Repositório
+
+
+1) git remote add origin https://github.com/luferIPCA/EDA-LESI-2024-2025.git
+2) git fetch
+3) git pull

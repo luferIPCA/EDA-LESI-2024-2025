@@ -1,0 +1,197 @@
+\hypertarget{_funcoes_8h}{}\section{Ficha\+Diagnostico/\+Funcoes.h File Reference}
+\label{_funcoes_8h}\index{FichaDiagnostico/Funcoes.h@{FichaDiagnostico/Funcoes.h}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_objeto}{Objeto}}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{_funcoes_8h_a0240ac851181b84ac374872dc5434ee4}{N}}~40
+\begin{DoxyCompactList}\small\item\em @\+Funcoes.h \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{_funcoes_8h_ac8d0b8208abd9d034f8773dce910b3f5}{M\+A\+X\+N\+O\+ME}}~40
+\item 
+\#define \mbox{\hyperlink{_funcoes_8h_a587e21dda1f72be700a6206023ad681b}{F\+U\+NC}}
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \mbox{\hyperlink{struct_objeto}{Objeto}} \mbox{\hyperlink{_funcoes_8h_ac18ff2f6b1dd76ec7cfafb385341ec59}{Objeto}}
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{_funcoes_8h_af6a258d8f3ee5206d682d799316314b1}{bool}} \{ \mbox{\hyperlink{_funcoes_8h_af6a258d8f3ee5206d682d799316314b1af382a63cc3d6491bf26b59e66f46826d}{F}}, 
+\mbox{\hyperlink{_funcoes_8h_af6a258d8f3ee5206d682d799316314b1a21f40778b7db9343a6ca75ec2c41ccce}{T}}
+ \}
+\item 
+enum \mbox{\hyperlink{_funcoes_8h_ad7db24bb3d0c08de5a3895448ddd4bf0}{dimensions}} \{ \mbox{\hyperlink{_funcoes_8h_ad7db24bb3d0c08de5a3895448ddd4bf0a5ba736c15399239b05e4fa5a00ace5c3}{U\+ND}}, 
+\mbox{\hyperlink{_funcoes_8h_ad7db24bb3d0c08de5a3895448ddd4bf0aa2ab3dfb8b0705b54ffcbea910735164}{D\+E\+U\+XD}}, 
+\mbox{\hyperlink{_funcoes_8h_ad7db24bb3d0c08de5a3895448ddd4bf0a734ec46050618ae834d88b883fa547dc}{T\+R\+O\+I\+SD}}
+ \}
+\begin{DoxyCompactList}\small\item\em Boolean. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+double \mbox{\hyperlink{_funcoes_8h_aa6727e6e29b7e3ce0b2c7611a39b8816}{Media\+Array}} (double v\mbox{[}$\,$\mbox{]}, int n)
+\item 
+float \mbox{\hyperlink{_funcoes_8h_ab43315505a2646c1ffc9876c5fe57eaf}{Media\+Distancia\+Objetos}} (\mbox{\hyperlink{struct_objeto}{Objeto}} v\mbox{[}$\,$\mbox{]}, int n)
+\item 
+\mbox{\hyperlink{struct_objeto}{Objeto}} \mbox{\hyperlink{_funcoes_8h_a3beeef169900eec01b816cc9e0a98123}{Qual\+Mais\+Longe}} (\mbox{\hyperlink{struct_objeto}{Objeto}} v\mbox{[}$\,$\mbox{]}, int n)
+\item 
+\mbox{\hyperlink{_funcoes_8h_af6a258d8f3ee5206d682d799316314b1}{bool}} \mbox{\hyperlink{_funcoes_8h_a50330cc88746a70b109f49f3c1ae4a5a}{Grava\+Dados}} (char $\ast$nome\+Ficheiro, \mbox{\hyperlink{struct_objeto}{Objeto}} v\mbox{[}$\,$\mbox{]}, int n)
+\item 
+long \mbox{\hyperlink{_funcoes_8h_ab0b7bfc23ba29de6e951045d7126a5a6}{Le\+Dados}} (char $\ast$nome\+Ficheiro, \mbox{\hyperlink{struct_objeto}{Objeto}} v\mbox{[}$\,$\mbox{]})
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_objeto}{Objeto}} \mbox{\hyperlink{_funcoes_8h_aeb2b56eafc4d88bd843a364ab8dab3d8}{objetos}} \mbox{[}\mbox{\hyperlink{_funcoes_8h_a0240ac851181b84ac374872dc5434ee4}{N}}\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\mbox{\Hypertarget{_funcoes_8h_a587e21dda1f72be700a6206023ad681b}\label{_funcoes_8h_a587e21dda1f72be700a6206023ad681b}} 
+\index{Funcoes.h@{Funcoes.h}!FUNC@{FUNC}}
+\index{FUNC@{FUNC}!Funcoes.h@{Funcoes.h}}
+\subsubsection{\texorpdfstring{FUNC}{FUNC}}
+{\footnotesize\ttfamily \#define F\+U\+NC}
+
+\mbox{\Hypertarget{_funcoes_8h_ac8d0b8208abd9d034f8773dce910b3f5}\label{_funcoes_8h_ac8d0b8208abd9d034f8773dce910b3f5}} 
+\index{Funcoes.h@{Funcoes.h}!MAXNOME@{MAXNOME}}
+\index{MAXNOME@{MAXNOME}!Funcoes.h@{Funcoes.h}}
+\subsubsection{\texorpdfstring{MAXNOME}{MAXNOME}}
+{\footnotesize\ttfamily \#define M\+A\+X\+N\+O\+ME~40}
+
+Número de caracteres de um nome \mbox{\Hypertarget{_funcoes_8h_a0240ac851181b84ac374872dc5434ee4}\label{_funcoes_8h_a0240ac851181b84ac374872dc5434ee4}} 
+\index{Funcoes.h@{Funcoes.h}!N@{N}}
+\index{N@{N}!Funcoes.h@{Funcoes.h}}
+\subsubsection{\texorpdfstring{N}{N}}
+{\footnotesize\ttfamily \#define N~40}
+
+
+
+@\+Funcoes.h 
+
+Total de Objetos 
+
+\subsection{Typedef Documentation}
+\mbox{\Hypertarget{_funcoes_8h_ac18ff2f6b1dd76ec7cfafb385341ec59}\label{_funcoes_8h_ac18ff2f6b1dd76ec7cfafb385341ec59}} 
+\index{Funcoes.h@{Funcoes.h}!Objeto@{Objeto}}
+\index{Objeto@{Objeto}!Funcoes.h@{Funcoes.h}}
+\subsubsection{\texorpdfstring{Objeto}{Objeto}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_objeto}{Objeto}} \mbox{\hyperlink{struct_objeto}{Objeto}}}
+
+Definição de um \mbox{\hyperlink{struct_objeto}{Objeto}} 
+
+\subsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{_funcoes_8h_af6a258d8f3ee5206d682d799316314b1}\label{_funcoes_8h_af6a258d8f3ee5206d682d799316314b1}} 
+\index{Funcoes.h@{Funcoes.h}!bool@{bool}}
+\index{bool@{bool}!Funcoes.h@{Funcoes.h}}
+\subsubsection{\texorpdfstring{bool}{bool}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{_funcoes_8h_af6a258d8f3ee5206d682d799316314b1}{bool}}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{F@{F}!Funcoes.h@{Funcoes.h}}\index{Funcoes.h@{Funcoes.h}!F@{F}}}\mbox{\Hypertarget{_funcoes_8h_af6a258d8f3ee5206d682d799316314b1af382a63cc3d6491bf26b59e66f46826d}\label{_funcoes_8h_af6a258d8f3ee5206d682d799316314b1af382a63cc3d6491bf26b59e66f46826d}} 
+F&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{T@{T}!Funcoes.h@{Funcoes.h}}\index{Funcoes.h@{Funcoes.h}!T@{T}}}\mbox{\Hypertarget{_funcoes_8h_af6a258d8f3ee5206d682d799316314b1a21f40778b7db9343a6ca75ec2c41ccce}\label{_funcoes_8h_af6a258d8f3ee5206d682d799316314b1a21f40778b7db9343a6ca75ec2c41ccce}} 
+T&\\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{_funcoes_8h_ad7db24bb3d0c08de5a3895448ddd4bf0}\label{_funcoes_8h_ad7db24bb3d0c08de5a3895448ddd4bf0}} 
+\index{Funcoes.h@{Funcoes.h}!dimensions@{dimensions}}
+\index{dimensions@{dimensions}!Funcoes.h@{Funcoes.h}}
+\subsubsection{\texorpdfstring{dimensions}{dimensions}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{_funcoes_8h_ad7db24bb3d0c08de5a3895448ddd4bf0}{dimensions}}}
+
+
+
+Boolean. 
+
+The enumeration of space dimension \begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{UND@{UND}!Funcoes.h@{Funcoes.h}}\index{Funcoes.h@{Funcoes.h}!UND@{UND}}}\mbox{\Hypertarget{_funcoes_8h_ad7db24bb3d0c08de5a3895448ddd4bf0a5ba736c15399239b05e4fa5a00ace5c3}\label{_funcoes_8h_ad7db24bb3d0c08de5a3895448ddd4bf0a5ba736c15399239b05e4fa5a00ace5c3}} 
+U\+ND&1D \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DEUXD@{DEUXD}!Funcoes.h@{Funcoes.h}}\index{Funcoes.h@{Funcoes.h}!DEUXD@{DEUXD}}}\mbox{\Hypertarget{_funcoes_8h_ad7db24bb3d0c08de5a3895448ddd4bf0aa2ab3dfb8b0705b54ffcbea910735164}\label{_funcoes_8h_ad7db24bb3d0c08de5a3895448ddd4bf0aa2ab3dfb8b0705b54ffcbea910735164}} 
+D\+E\+U\+XD&2D \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{TROISD@{TROISD}!Funcoes.h@{Funcoes.h}}\index{Funcoes.h@{Funcoes.h}!TROISD@{TROISD}}}\mbox{\Hypertarget{_funcoes_8h_ad7db24bb3d0c08de5a3895448ddd4bf0a734ec46050618ae834d88b883fa547dc}\label{_funcoes_8h_ad7db24bb3d0c08de5a3895448ddd4bf0a734ec46050618ae834d88b883fa547dc}} 
+T\+R\+O\+I\+SD&3D \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{_funcoes_8h_a50330cc88746a70b109f49f3c1ae4a5a}\label{_funcoes_8h_a50330cc88746a70b109f49f3c1ae4a5a}} 
+\index{Funcoes.h@{Funcoes.h}!GravaDados@{GravaDados}}
+\index{GravaDados@{GravaDados}!Funcoes.h@{Funcoes.h}}
+\subsubsection{\texorpdfstring{GravaDados()}{GravaDados()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_funcoes_8h_af6a258d8f3ee5206d682d799316314b1}{bool}} Grava\+Dados (\begin{DoxyParamCaption}\item[{char $\ast$}]{nome\+Ficheiro,  }\item[{\mbox{\hyperlink{struct_objeto}{Objeto}}}]{v\mbox{[}$\,$\mbox{]},  }\item[{int}]{n }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_funcoes_8h_ab0b7bfc23ba29de6e951045d7126a5a6}\label{_funcoes_8h_ab0b7bfc23ba29de6e951045d7126a5a6}} 
+\index{Funcoes.h@{Funcoes.h}!LeDados@{LeDados}}
+\index{LeDados@{LeDados}!Funcoes.h@{Funcoes.h}}
+\subsubsection{\texorpdfstring{LeDados()}{LeDados()}}
+{\footnotesize\ttfamily long Le\+Dados (\begin{DoxyParamCaption}\item[{char $\ast$}]{nome\+Ficheiro,  }\item[{\mbox{\hyperlink{struct_objeto}{Objeto}}}]{v\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+Le dados de um ficheiro 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em Nome} & do Ficheiro a ler \\
+\hline
+\mbox{\texttt{ out}}  & {\em Valores} & lidos do Ficheiro \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_funcoes_8h_aa6727e6e29b7e3ce0b2c7611a39b8816}\label{_funcoes_8h_aa6727e6e29b7e3ce0b2c7611a39b8816}} 
+\index{Funcoes.h@{Funcoes.h}!MediaArray@{MediaArray}}
+\index{MediaArray@{MediaArray}!Funcoes.h@{Funcoes.h}}
+\subsubsection{\texorpdfstring{MediaArray()}{MediaArray()}}
+{\footnotesize\ttfamily double Media\+Array (\begin{DoxyParamCaption}\item[{double}]{v\mbox{[}$\,$\mbox{]},  }\item[{int}]{n }\end{DoxyParamCaption})}
+
+Calcula média de um array de valores reais 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em Valores} & \\
+\hline
+\mbox{\texttt{ in}}  & {\em Numero} & de Valores \\
+\hline
+\mbox{\texttt{ out}}  & {\em Média} & \\
+\hline
+\end{DoxyParams}
+auxiliar \mbox{\Hypertarget{_funcoes_8h_ab43315505a2646c1ffc9876c5fe57eaf}\label{_funcoes_8h_ab43315505a2646c1ffc9876c5fe57eaf}} 
+\index{Funcoes.h@{Funcoes.h}!MediaDistanciaObjetos@{MediaDistanciaObjetos}}
+\index{MediaDistanciaObjetos@{MediaDistanciaObjetos}!Funcoes.h@{Funcoes.h}}
+\subsubsection{\texorpdfstring{MediaDistanciaObjetos()}{MediaDistanciaObjetos()}}
+{\footnotesize\ttfamily float Media\+Distancia\+Objetos (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_objeto}{Objeto}}}]{v\mbox{[}$\,$\mbox{]},  }\item[{int}]{n }\end{DoxyParamCaption})}
+
+a) Calcula média de um array de objetos 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em v} & Arrays Objetos \\
+\hline
+\mbox{\texttt{ in}}  & {\em n} & Numero de Objetos \\
+\hline
+\mbox{\texttt{ out}}  & {\em Média} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_funcoes_8h_a3beeef169900eec01b816cc9e0a98123}\label{_funcoes_8h_a3beeef169900eec01b816cc9e0a98123}} 
+\index{Funcoes.h@{Funcoes.h}!QualMaisLonge@{QualMaisLonge}}
+\index{QualMaisLonge@{QualMaisLonge}!Funcoes.h@{Funcoes.h}}
+\subsubsection{\texorpdfstring{QualMaisLonge()}{QualMaisLonge()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_objeto}{Objeto}} Qual\+Mais\+Longe (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_objeto}{Objeto}}}]{v\mbox{[}$\,$\mbox{]},  }\item[{int}]{n }\end{DoxyParamCaption})}
+
+
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{_funcoes_8h_aeb2b56eafc4d88bd843a364ab8dab3d8}\label{_funcoes_8h_aeb2b56eafc4d88bd843a364ab8dab3d8}} 
+\index{Funcoes.h@{Funcoes.h}!objetos@{objetos}}
+\index{objetos@{objetos}!Funcoes.h@{Funcoes.h}}
+\subsubsection{\texorpdfstring{objetos}{objetos}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_objeto}{Objeto}} objetos\mbox{[}\mbox{\hyperlink{_funcoes_8h_a0240ac851181b84ac374872dc5434ee4}{N}}\mbox{]}}
+
+Estrutura de dados com todos os objetos da Ficha de Diagnóstico 

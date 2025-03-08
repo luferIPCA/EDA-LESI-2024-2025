@@ -1,0 +1,57 @@
+\hypertarget{_funcoes_8c}{}\section{Ficha\+Diagnostico/\+Funcoes.c File Reference}
+\label{_funcoes_8c}\index{FichaDiagnostico/Funcoes.c@{FichaDiagnostico/Funcoes.c}}
+{\ttfamily \#include \char`\"{}Funcoes.\+h\char`\"{}}\newline
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{_funcoes_8c_ab43315505a2646c1ffc9876c5fe57eaf}{Media\+Distancia\+Objetos}} (\mbox{\hyperlink{struct_objeto}{Objeto}} v\mbox{[}$\,$\mbox{]}, int n)
+\item 
+\mbox{\hyperlink{struct_objeto}{Objeto}} \mbox{\hyperlink{_funcoes_8c_a3beeef169900eec01b816cc9e0a98123}{Qual\+Mais\+Longe}} (\mbox{\hyperlink{struct_objeto}{Objeto}} v\mbox{[}$\,$\mbox{]}, int n)
+\item 
+\mbox{\hyperlink{_funcoes_8h_af6a258d8f3ee5206d682d799316314b1}{bool}} \mbox{\hyperlink{_funcoes_8c_a50330cc88746a70b109f49f3c1ae4a5a}{Grava\+Dados}} (char $\ast$nome\+Ficheiro, \mbox{\hyperlink{struct_objeto}{Objeto}} v\mbox{[}$\,$\mbox{]}, int n)
+\item 
+long \mbox{\hyperlink{_funcoes_8c_ab0b7bfc23ba29de6e951045d7126a5a6}{Le\+Dados}} (char $\ast$nome\+Ficheiro, \mbox{\hyperlink{struct_objeto}{Objeto}} v\mbox{[}$\,$\mbox{]})
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{_funcoes_8c_a50330cc88746a70b109f49f3c1ae4a5a}\label{_funcoes_8c_a50330cc88746a70b109f49f3c1ae4a5a}} 
+\index{Funcoes.c@{Funcoes.c}!GravaDados@{GravaDados}}
+\index{GravaDados@{GravaDados}!Funcoes.c@{Funcoes.c}}
+\subsubsection{\texorpdfstring{GravaDados()}{GravaDados()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_funcoes_8h_af6a258d8f3ee5206d682d799316314b1}{bool}} Grava\+Dados (\begin{DoxyParamCaption}\item[{char $\ast$}]{nome\+Ficheiro,  }\item[{\mbox{\hyperlink{struct_objeto}{Objeto}}}]{v\mbox{[}$\,$\mbox{]},  }\item[{int}]{n }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_funcoes_8c_ab0b7bfc23ba29de6e951045d7126a5a6}\label{_funcoes_8c_ab0b7bfc23ba29de6e951045d7126a5a6}} 
+\index{Funcoes.c@{Funcoes.c}!LeDados@{LeDados}}
+\index{LeDados@{LeDados}!Funcoes.c@{Funcoes.c}}
+\subsubsection{\texorpdfstring{LeDados()}{LeDados()}}
+{\footnotesize\ttfamily long Le\+Dados (\begin{DoxyParamCaption}\item[{char $\ast$}]{nome\+Ficheiro,  }\item[{\mbox{\hyperlink{struct_objeto}{Objeto}}}]{v\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+
+Le dados de um ficheiro 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em Nome} & do Ficheiro a ler \\
+\hline
+\mbox{\texttt{ out}}  & {\em Valores} & lidos do Ficheiro \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_funcoes_8c_ab43315505a2646c1ffc9876c5fe57eaf}\label{_funcoes_8c_ab43315505a2646c1ffc9876c5fe57eaf}} 
+\index{Funcoes.c@{Funcoes.c}!MediaDistanciaObjetos@{MediaDistanciaObjetos}}
+\index{MediaDistanciaObjetos@{MediaDistanciaObjetos}!Funcoes.c@{Funcoes.c}}
+\subsubsection{\texorpdfstring{MediaDistanciaObjetos()}{MediaDistanciaObjetos()}}
+{\footnotesize\ttfamily float Media\+Distancia\+Objetos (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_objeto}{Objeto}}}]{v\mbox{[}$\,$\mbox{]},  }\item[{int}]{n }\end{DoxyParamCaption})}
+
+a) Calcula média de um array de objetos 
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em v} & Arrays Objetos \\
+\hline
+\mbox{\texttt{ in}}  & {\em n} & Numero de Objetos \\
+\hline
+\mbox{\texttt{ out}}  & {\em Média} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_funcoes_8c_a3beeef169900eec01b816cc9e0a98123}\label{_funcoes_8c_a3beeef169900eec01b816cc9e0a98123}} 
+\index{Funcoes.c@{Funcoes.c}!QualMaisLonge@{QualMaisLonge}}
+\index{QualMaisLonge@{QualMaisLonge}!Funcoes.c@{Funcoes.c}}
+\subsubsection{\texorpdfstring{QualMaisLonge()}{QualMaisLonge()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{struct_objeto}{Objeto}} Qual\+Mais\+Longe (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_objeto}{Objeto}}}]{v\mbox{[}$\,$\mbox{]},  }\item[{int}]{n }\end{DoxyParamCaption})}
+

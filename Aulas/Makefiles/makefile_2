@@ -1,0 +1,8 @@
+#makefile1
+#lufer
+
+CC=gcc
+CFLAGS=-I.
+
+all: file1.o file2.o
+     $(CC) -o $@ file1.o file2.o $(CFLAGS)
