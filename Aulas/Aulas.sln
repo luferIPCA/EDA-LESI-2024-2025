@@ -51,6 +51,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Aula 4 - Funcoes e Apontado
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Aula 5 - Memoria Dinamica", "Aula 5 - Memoria Dinamica\Aula 5 - Memoria Dinamica.vcxproj", "{879BF330-57B4-40DB-98F3-F323B14C79E2}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Aula 6 - Memoria Dinamica", "Aula 6 - Memoria Dinamica\Aula 6 - Memoria Dinamica.vcxproj", "{02BB679C-DE69-47BD-8C66-7FCC99F29052}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -295,6 +297,18 @@ Global
 		{879BF330-57B4-40DB-98F3-F323B14C79E2}.Release|x64.Build.0 = Release|x64
 		{879BF330-57B4-40DB-98F3-F323B14C79E2}.Release|x86.ActiveCfg = Release|Win32
 		{879BF330-57B4-40DB-98F3-F323B14C79E2}.Release|x86.Build.0 = Release|Win32
+		{02BB679C-DE69-47BD-8C66-7FCC99F29052}.Debug|Any CPU.ActiveCfg = Debug|x64
+		{02BB679C-DE69-47BD-8C66-7FCC99F29052}.Debug|Any CPU.Build.0 = Debug|x64
+		{02BB679C-DE69-47BD-8C66-7FCC99F29052}.Debug|x64.ActiveCfg = Debug|x64
+		{02BB679C-DE69-47BD-8C66-7FCC99F29052}.Debug|x64.Build.0 = Debug|x64
+		{02BB679C-DE69-47BD-8C66-7FCC99F29052}.Debug|x86.ActiveCfg = Debug|Win32
+		{02BB679C-DE69-47BD-8C66-7FCC99F29052}.Debug|x86.Build.0 = Debug|Win32
+		{02BB679C-DE69-47BD-8C66-7FCC99F29052}.Release|Any CPU.ActiveCfg = Release|x64
+		{02BB679C-DE69-47BD-8C66-7FCC99F29052}.Release|Any CPU.Build.0 = Release|x64
+		{02BB679C-DE69-47BD-8C66-7FCC99F29052}.Release|x64.ActiveCfg = Release|x64
+		{02BB679C-DE69-47BD-8C66-7FCC99F29052}.Release|x64.Build.0 = Release|x64
+		{02BB679C-DE69-47BD-8C66-7FCC99F29052}.Release|x86.ActiveCfg = Release|Win32
+		{02BB679C-DE69-47BD-8C66-7FCC99F29052}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

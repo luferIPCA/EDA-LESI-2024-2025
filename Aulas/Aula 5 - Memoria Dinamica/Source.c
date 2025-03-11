@@ -2,7 +2,7 @@
  *  @file Source.c
  *  @author lufer
  *  @date 2025-03-07
- *  @project Aula 5 - Memoria Dinamic
+ *  @project Aula 5 - Memoria Dinamica
  *
  *  Apontadores em Estruturas de dados dinâmicas.
  */
@@ -66,9 +66,7 @@ void main() {
 	strcpy(a4.pais, "França");
 	a4.next = NULL;
 	
-	
 	a3.next = &a4;
-
 
 	printf("Num : %d\n", a2.a.num);				//num de a2
 	printf("Num : %d\n", a2.next->a.num);		//num de a3
