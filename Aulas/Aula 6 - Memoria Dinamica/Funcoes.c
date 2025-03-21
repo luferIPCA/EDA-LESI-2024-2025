@@ -4,6 +4,7 @@
 #include <stdio.h>
 #include <malloc.h>
 #include <string.h>
+#include <time.h>
 
 
 #pragma region Clube
@@ -42,6 +43,12 @@ Clube* NewClub(int numSocios, char* nomeClube) {
 		aux->ns = numSocios;
 		strcpy(aux->nome, nomeClube);
 	}
+	return aux;
+}
+
+Clube* NewClubData(int numSocios, char* nomeClube, char* data) {
+	Clube* aux = NewClub(numSocios, nomeClube);
+	aux->data = *GetDate(data);
 	return aux;
 }
 
@@ -85,7 +92,6 @@ SociosClube* CriaClubeSocios(Clube c) {
 	return aux;
 }
 
-
 void MostraSociosClube(SociosClube* h) {
 
 	if (h == NULL) return;
@@ -117,7 +123,27 @@ bool InsereNovoSocio(Socio* c, SociosClube* sc) {
 }
 #pragma endregion
 
-int testa(int* p) {
-	(*p)++;
-	return *p;
+#pragma region Auxiliares
+/*!
+ * Constroi uma data a partir de uma string 
+ */
+struct tm *GetDate(const char* d) {
+	struct tm* date = malloc(sizeof(struct tm)); // reserva memory
+	if (!date) return NULL; // algo corre mal
+
+	memset(date, 0, sizeof(struct tm)); // limpa eventual "lixo" na memória alocada!
+
+	char format[] = "%y/%m/%d"; // Segue formato "yy/mm/dd" ...isto pode entrar como parâmetro
+
+	int year, month, day;
+	if (sscanf(d, "%d/%d/%d", &year, &month, &day) != 3) {
+		free(date); // liberta memória se o parsing falha
+		return NULL;
+	}
+	date->tm_year = year; // 
+	date->tm_mon = month; // 
+	date->tm_mday = day;
+
+	return date;
 }
+#pragma endregion

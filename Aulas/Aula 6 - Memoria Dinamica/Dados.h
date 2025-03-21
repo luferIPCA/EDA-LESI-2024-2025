@@ -5,7 +5,14 @@
  *  @project Hoje
  *
  *  Declares the dados.
+ *
+ *  Ver:
+ *      https://zetcode.com/articles/cdatetime/
+ *      https://www.geeksforgeeks.org/data-types-in-c/
+
  */
+
+#include <time.h>	//gerir datas e tempo
 
 #pragma once
 
@@ -14,13 +21,15 @@
 #define N 10
 #define M 100
 
+
 /*!
  *  Descrição...
  *  
  */
 typedef struct Clube{
-	char nome[N];	//nome do clube
-	int ns;			//numero de socios do clube
+	char nome[N];		//nome do clube
+	int ns;				//numero de socios do clube
+	struct tm  data;	//data da criação do clube
 }Clube;
 
 

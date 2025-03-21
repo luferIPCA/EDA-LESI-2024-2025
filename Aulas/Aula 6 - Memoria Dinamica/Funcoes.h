@@ -9,6 +9,7 @@
 
 #include "Dados.h"
 #include <stdbool.h>
+#include <stdlib.h>	//strptime
 
 #pragma once
 
@@ -20,6 +21,7 @@
 void ShowClube(Clube c);
 
 Clube* NewClub(int numSocios, char* nomeClube);
+Clube* NewClubData(int numSocios, char* nomeClube, char* data);
 
 int NumSocios(Clube c);
 
@@ -43,3 +45,6 @@ bool InsereNovoSocio(Socio *c, SociosClube* sc);
 
 #pragma endregion
 
+#pragma region Auxiliares
+struct tm *GetDate(const char* d);
+#pragma endregion
