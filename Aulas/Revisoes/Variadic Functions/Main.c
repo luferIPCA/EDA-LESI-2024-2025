@@ -7,7 +7,7 @@
  * 
  * @author lufer
  * @see https://en.cppreference.com/w/c/variadic
- * @date   May 2022
+ * @date   April  2025
  *********************************************************************/
 #include <stdarg.h>
 #include <stdio.h>

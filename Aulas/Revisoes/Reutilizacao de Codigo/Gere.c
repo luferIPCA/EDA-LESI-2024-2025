@@ -9,7 +9,7 @@
  * H1: Abordagem com duplicação de código
  * H2: Abordagem com reutilização: definição e chamada de funções
  * \author lufer
- * \date   April 2022
+ * \date   April 2025
  *********************************************************************/
 
 #include <stdio.h>
