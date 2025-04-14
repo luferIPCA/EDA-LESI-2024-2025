@@ -87,6 +87,54 @@ Element* InsereOrdenado(Element* inicio, Element* novo) {
 	return inicio;
 }
 
+
+
+/*!
+ *  Inseres the ordenado cõntrolado.
+ *
+ *      @param [in,out] inicio Head da lista
+ *      @param [in,out] novo   novo elemento a adicionar
+ *      @param [in,out] res    resultado: true - Sucesso, false - Erro
+ *
+ *      @return 
+ */
+Element* InsereOrdenadoCõntrolado(Element* inicio, Element* novo, bool *res) {
+
+	*res = false;		//por defeito é falso
+	//validações
+	if (novo == NULL) return inicio;
+	//Se já existe, não insere
+	if (ProcuraElemento(inicio, novo->value)) 
+		return inicio;
+
+	//procurar a posição
+	//1ª posição
+	if (inicio == NULL) {
+		inicio = novo; return inicio;
+	}
+	if (inicio->value > novo->value) {
+		novo->prox = inicio;
+		inicio = novo;
+	}
+	//procura posição
+	Element* aux = inicio;
+	Element* aux2 = aux;
+	while (aux->value < novo->value && aux->prox != NULL)
+	{
+		aux2 = aux;
+		aux = aux->prox;
+	}
+	//se for na última posição
+	if (aux->value < novo->value)
+		aux->prox = novo;
+	else
+	{
+		novo->prox = aux;
+		aux2->prox = novo;
+	}
+	*res = true;
+	return inicio;
+}
  /**
  * @brief Altera dados do Elemento
  * @param [in]	h	Apontador para inicio da Lista
@@ -103,8 +151,18 @@ Element* AlteraElement(Element* h, int v, char*novoNome) {
 	return h;
 }
 
-Element* RemoveElement(Element* h, int cod) {
-	if (h == NULL) return NULL;			//Lista vazia
+/*!
+ *  Removes the element.
+ *
+ *      @param [in,out] h   
+ *      @param [in]     cod 
+ *
+ *      @return 
+ */
+Element* RemoveElement(Element* h, int cod, bool *res) {
+	if (h == NULL) {
+		*res = false; return NULL;
+	}			//Lista vazia
 	//if (!ProcuraElemento(h, cod)) return h;	//se não existe
 
 	if (h->value == cod) {		//remove no inicio da lista
@@ -125,6 +183,7 @@ Element* RemoveElement(Element* h, int cod) {
 			free(aux);
 		}
 	}
+	*res = true;
 	return h;
 }
 
@@ -134,7 +193,7 @@ Element* RemoveElement(Element* h, int cod) {
 * @param [in]	cod	Codigo do Element a alterar
 * @return	Apontador para Lista
 */
-Element* RemoveElementRecursivo(Element* head, int cod) {
+Element* RemoveElementRecursivo(Element* head, int cod, int*res) {
 	Element* aux;
 
 	if (head == NULL)
@@ -148,6 +207,7 @@ Element* RemoveElementRecursivo(Element* head, int cod) {
 	else {
 		head->prox = RemoveElementRecursivo(head->prox, cod);
 	}
+	*res = true;
 	return head;
 }
 
@@ -175,15 +235,17 @@ Element* OrdenaLista(Element* h) {
 * @param [in]	h	Apontador para inicio da Lista
 */
 
-void DestroiLista(Element** h) {
-	if (h != NULL) {
+bool DestroiLista(Element** h) {
+	if (h == NULL) return false;
+	//if (h != NULL) {
 		Element* aux;
 		while (*h) {
 			aux = *h;
 			*h = (*h)->prox;
 			free(aux);
 		}
-	}
+	//}
+	return true;
 }
 
 //ou
@@ -197,6 +259,7 @@ Element* DestroiListaII(Element* h) {
 			free(aux);
 		}
 	}
+	return h;
 }
 
 
@@ -248,3 +311,12 @@ Element* LerElementsBinario(char* nomeFicheiro) {
 	return h;
 }
 #pragma endregion
+
+
+void MostraLista(Element* h) {
+	Element* aux = h;
+	while (aux) {
+		printf("Cod: %d\n", aux->value);
+		aux = aux->prox;
+	}
+}
